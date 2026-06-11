@@ -1,0 +1,10 @@
+name: "Hello-World"
+on: push
+
+jobs:
+    my job: 
+        runs-on: ubuntu-latest
+        steps:
+            - name: my-step
+            run: echo "There is a change in current version of the build training"
+            
