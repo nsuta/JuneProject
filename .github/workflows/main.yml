@@ -5,5 +5,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: my-step
-        run: echo "There is a change in current version of the build training"
-            
+              run: echo "There is a change in current version of the build training"
