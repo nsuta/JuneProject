@@ -1,7 +1,10 @@
 Git Hub
 User name - earn17dream@gmail.com
 password - A828960@navneet
-
+GitLab-
+User name - nsuta
+email id - earn17dream@gmail.com
+Password - Sweethome@11
 1. Download Git Bash
 2. Create a folder (GITjune)
 3. Go into the folder press right click 
@@ -198,6 +201,11 @@ if we create a workflow default name will be "main.yml"
 this work flow will be trigger whenever commit change is executed.
 to view the running job
 go to actions ---> select the latest running job
+click on you job name to see the details execution flow and/or error
+
+git lab
+
+sign up git lab
 
 		
 
