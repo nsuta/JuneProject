@@ -171,6 +171,7 @@ Import
 CI - stands for continues Integration 
 CD - Continues delivery/deployment
 
+Day - 3
 in order to CI or CD 
 
 to create action/workflow
