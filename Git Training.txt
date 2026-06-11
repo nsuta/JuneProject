@@ -1,0 +1,202 @@
+Git Hub
+User name - earn17dream@gmail.com
+password - A828960@navneet
+
+1. Download Git Bash
+2. Create a folder (GITjune)
+3. Go into the folder press right click 
+4. choose gitbashhere from more option. 
+
+How to configure user name and email id.
+
+open git bash terminal 
+git config --global user.name "Your Name"
+git config --global user.email "your email id"
+to view global properties 
+git config --list
+
+Initialise your git repository
+
+git init
+
+to set the global user name 
+git config --global user.name "Your Name"
+
+to set the global email 
+git config --global user.email "your email id"
+
+to view global properties  
+git config --list
+
+to stage all file 
+git add .
+
+to stage a particular file.
+git add "filename.extension"
+eg. git add "Git Training.txt"
+
+administrator@user MINGW64 /e/Navneet 2026/GITJune (master)
+$ git commit -m "file updated"
+[master 3eb5500] file updated
+ 1 file changed, 25 insertions(+)
+ create mode 100644 Git Training.txt
+
+[master 3eb5500] file updated - a unique code will be generated
+
+
+to commit the changes [permanently save changes]
+git commit -m "comments"
+eg. git commit -m "new file added"
+
+If the file is already tracked by Git, you can use:
+we can commit without staging too if already stagged once. 
+
+git commit -am "comments"
+eg. git commit -am "updated the notes"
+
+we can add multiple also. 
+
+to create file using bash 
+echo "my new app" > readme.txt
+
+Branch 
+create a branch 
+
+git branch feature/login
+git checkout feature/login
+
+or git checkout -b feature/login
+echo "login functionality" > login.txt
+
+to go to back master or main branch
+
+git checkout master
+
+if you want to merge the branches. 
+
+git merge feature/login
+
+after merge if you want to delete the branch 
+
+git branch -d feature/login
+
+
+Day2 -
+
+Open the GitHub home page
+Click on New 
+Enter a name for your repo
+add description if necessary
+select on for readme.txt
+
+create --> new repository
+if you want to share this project just to view
+go to Code ---> local --->then there is a URL (HTTPS) which we can give. 
+
+if we want to collaborate with someone 
+need to go to setting click on collaborators
+click on Add people
+search with ID or Email and add
+
+to copy from remote to local 
+git clone "URL"
+
+edit the files in folder
+git add.
+git commit -m "new file"
+git push
+
+to check 
+cd project name 
+eg. cd JuneProject
+
+To Pull files from remote//centeral 
+git pull (changes are taken to local repository)
+
+changes 
+git commit -m "new files added"
+git push (Update your changes to central repo)
+
+ 
+
+Open the Repository
+about there is a option of activity 
+from there we can see changes this repo gone through and who made the changes and when and how many times
+ 
+
+to create a branch 
+got to GitHub repo
+go to branch click on new branch and give branch name 
+git checkout -b feature/search 
+
+add some file and commit
+
+compare and create a pull request
+
+
+Create pull request
+
+Commit and merge
+ 
+To work from VScode
+neat the terminal [+] click on down arrow
+select git bash 
+and work on git commands
+
+
+to fetch the history 
+git fetch
+
+
+git fetch - shows all the new changes in central repo
+
+git merge - to merge from cental to loacal
+
+git log --all --decorate --oneline -- graph --> to view all commit and branches in the current repo through your graph 
+
+to copy public repository
+1) fork
+open the repo URL
+click on fork option
+create new for
+give a name --> save
+
+2) import
+copy the repo url
+click on +[select impot repo]
+
+paste the URL
+give a name for your repo
+Import
+CI - stands for continues Integration 
+CD - Continues delivery/deployment
+
+in order to CI or CD 
+
+to create action/workflow
+1. got to the repo
+2. we need to go to actions tab 
+3. click on set up a workflow yourself -->
+4. Copy paster the code below
+only for test purpose
+YML code
+it has to be same even space matter
+name: "Hello-World"
+on: push
+jobs:
+    my-job: 
+        runs-on: ubuntu-latest
+        steps:
+            - name: my-step
+              run: echo "There is a change in current version of the build training"Commit changes
+co-pilot will write it for me 
+
+if we create a workflow default name will be "main.yml"
+
+5. commit changes
+this work flow will be trigger whenever commit change is executed.
+to view the running job
+go to actions ---> select the latest running job
+
+		
+
